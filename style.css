@@ -41,11 +41,23 @@ body{
 
 .header-top{
     grid-area: header-top;
+    display: grid;
+    grid-template: 1fr / 2fr 1fr;
+}
+
+.search-bar,
+.notifications,
+.greeting,
+.button-menu{
+    border: 1px solid black;
 }
 
 .header-bottom{
     grid-area: header-bottom;
+    display: grid;
+    grid-template: 1fr / 1.5fr 1fr;
 }
+
 
 .sidebar{
     grid-area: sidebar;
