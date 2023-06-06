@@ -50,6 +50,12 @@ body{
     grid-template: 1fr / 2fr 1fr;
 }
 
+.header-bottom{
+    grid-area: header-bottom;
+    display: grid;
+    grid-template: 1fr / 1.5fr 1fr;
+}
+
 .search-bar{
     display: grid;
     grid-template: 1fr / 1fr 5fr;
@@ -127,26 +133,49 @@ body{
     gap: 10px;
 }
 
-.search-bar,
-.notifications,
-.greeting,
-.button-menu{
-    border: 1px solid black;
-}
-
-.header-bottom{
-    grid-area: header-bottom;
-    display: grid;
-    grid-template: 1fr / 1.5fr 1fr;
-}
 
 
 .sidebar{
     grid-area: sidebar;
+    display: grid;
+    grid-template: 0.25fr 1fr 1fr / 1fr;
+    grid-template-areas: 
+    "title"
+    "nav"
+    "settings";
     background-color: var(--sidebar-bc);
 }
+
+.title{
+    grid-area: title;
+    display: grid;
+    grid-template: 1fr / 0.5fr 1fr;
+}
+
+.nav{
+    grid-area: nav;
+    display: grid;
+    grid-template: repeat(auto-fit, 1fr) / 0.5fr 1fr;
+}
+
+.settings{
+    grid-area: settings;
+    display: grid;
+    grid-template: repeat(auto-fit, 1fr) / 0.5fr 1fr;
+}
+
 
 .main-content{
     grid-area: main;
     background-color: var(--main-bc);
+}
+
+.search-bar,
+.notifications,
+.greeting,
+.button-menu,
+.title,
+.nav,
+.settings{
+    border: 1px solid black;
 }
