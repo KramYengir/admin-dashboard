@@ -4,6 +4,11 @@
     --main-bc: rgb(245, 209, 209);
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     height: 100vh;
     margin: 0;
@@ -67,6 +72,32 @@ body{
     outline: none;
     border: none;
     background-color: grey;
+}
+
+.notifications{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 3fr;
+    gap: 5px;
+    align-items: center;
+    justify-items: end;
+}
+
+.notifications .bell-icon{
+    background-color: aqua;
+    width: 2rem;
+    height: 2rem;
+}
+
+.notifications .profile-icon{
+    background-color: #fff;
+    width: 2rem;
+    height: 2rem;
+    justify-self: end;
+}
+
+.notifications .username{
+    justify-self: center;
+    padding: 0 10px;
 }
 
 .search-bar,
