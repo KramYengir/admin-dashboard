@@ -212,7 +212,26 @@ body{
 
 .main-content{
     grid-area: main;
+    display: grid;
+    grid-template: 1fr / 3fr 1fr;
     background-color: var(--main-bc);
+}
+
+.project-area h2{
+    padding: 2rem 0 0 2rem;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    align-content: start;
+    padding: 2rem;
+}
+
+.project{
+    height: 200px;
+    background-color: #fff;
 }
 
 .search-bar,
@@ -221,6 +240,8 @@ body{
 .button-menu,
 .title,
 .nav,
-.settings{
+.settings,
+.article,
+.feed{
     border: 1px solid black;
 }
