@@ -254,6 +254,51 @@ body{
     background-color: #534242;
 }
 
+.feed{
+    display: grid;
+    grid-template: max-content max-content / 1fr;
+    align-items: start;
+    gap: 2rem;
+}
+
+.feed h2{
+    padding: 2rem 1rem 0 0;   
+}
+
+.announcements,
+.trending{
+    height: clamp(250px, 350px, 500px);
+    display: grid;
+    grid-template: 1fr 8fr / 0.8fr;
+    justify-content: center;
+    gap: 25px;
+}
+
+.announcements-panel{
+    display: grid;
+    grid-template: repeat(auto-fill, 0.33fr) / 1fr;
+    overflow: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    gap: 1rem;
+    padding: 0.8rem;
+    background-color: #fff;
+    border-radius: 0.8rem;
+}
+
+.announcements-panel::-webkit-scrollbar {
+    display: none;
+  }
+
+.announcements-panel div:not(:first-child){
+    border-top: 1px solid grey;
+}
+
+.announcement h4{
+    padding-top: 0.8rem;
+}
+
 
 .search-bar,
 .notifications,
@@ -265,6 +310,8 @@ body{
 .article,
 .feed,
 .summary,
-.interactions{
+.interactions,
+.announcements,
+.trending{
     border: var(--guide-border);
 }
