@@ -100,6 +100,25 @@ body{
     padding: 0 10px;
 }
 
+.greeting-area{
+    display: grid;
+    grid-template: 1fr/ 1fr 3fr;
+    gap: 10px;
+}
+
+.large-profile-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #fff;
+    align-self: center;
+    justify-self: end;
+}
+
+.greeting{
+    align-self: center;
+    justify-self: start;
+}
+
 .search-bar,
 .notifications,
 .greeting,
