@@ -2,6 +2,7 @@
     --header-bc: yellow;
     --sidebar-bc: blue;
     --main-bc: rgb(245, 209, 209);
+    --guide-border: 1px solid black;
 }
 
 *{
@@ -41,7 +42,8 @@ body{
 
 .header-top,
 .header-bottom{
-    border: 1px dashed red;
+    border: var(--guide-border);
+    padding: 1rem;
 }
 
 .header-top{
@@ -138,14 +140,16 @@ body{
 .sidebar{
     grid-area: sidebar;
     display: grid;
-    grid-template: 0.25fr 1fr 1fr / 1fr;
+    grid-template: max-content max-content max-content/ 1fr;
     grid-template-areas: 
     "title"
     "nav"
     "settings";
     background-color: var(--sidebar-bc);
     padding-left: 3rem;
-    gap: 20px;
+    padding-top: 2rem;
+    gap: 50px;
+    align-items: start;
 }
 
 .sidebar a{
@@ -223,16 +227,33 @@ body{
 
 .projects{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
     align-content: start;
     padding: 2rem;
 }
 
 .project{
-    height: 200px;
+    display: grid;
+    grid-template: 3fr 1fr / 1fr;
+    height: 250px;
     background-color: #fff;
+    padding: 1rem;
 }
+
+.interactions{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.interactable{
+    width: 2rem;
+    height: 2rem;
+    background-color: #534242;
+}
+
 
 .search-bar,
 .notifications,
@@ -242,6 +263,8 @@ body{
 .nav,
 .settings,
 .article,
-.feed{
-    border: 1px solid black;
+.feed,
+.summary,
+.interactions{
+    border: var(--guide-border);
 }
