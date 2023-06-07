@@ -24,11 +24,16 @@ body{
     height: 100%;
 }
 
-/* .header,
-.sidebar,
-.main-content{
-    border: 1px solid black;
-} */
+.search-bar img,
+.notifications .bell-icon,
+.notifications .profile-icon,
+.interactable,
+.trending-item img{
+    width: 2rem;
+    height: 2rem;
+}
+
+
 
 .header{
     grid-area: header;
@@ -66,8 +71,6 @@ body{
 
 .search-bar img{
     background-color: aqua;
-    width: 2rem;
-    height: 2rem;
     align-self: center;
     justify-self: end;
 }
@@ -92,13 +95,11 @@ body{
 
 .notifications .bell-icon{
     background-color: aqua;
-    width: 2rem;
     height: 2rem;
 }
 
 .notifications .profile-icon{
     background-color: #fff;
-    width: 2rem;
     height: 2rem;
     justify-self: end;
 }
@@ -249,8 +250,6 @@ body{
 }
 
 .interactable{
-    width: 2rem;
-    height: 2rem;
     background-color: #534242;
 }
 
@@ -258,7 +257,7 @@ body{
     display: grid;
     grid-template: max-content max-content / 1fr;
     align-items: start;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .feed h2{
@@ -274,22 +273,27 @@ body{
     gap: 25px;
 }
 
-.announcements-panel{
+.announcements-panel,
+.trending-panel{
     display: grid;
-    grid-template: repeat(auto-fill, 0.33fr) / 1fr;
     overflow: scroll;
     overflow-x: hidden;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    gap: 1rem;
-    padding: 0.8rem;
     background-color: #fff;
     border-radius: 0.8rem;
+    padding: 0.8rem;
 }
 
-.announcements-panel::-webkit-scrollbar {
+.announcements-panel::-webkit-scrollbar,
+.trending-panel::-webkit-scrollbar{
     display: none;
   }
+
+.announcements-panel{
+    grid-template: repeat(auto-fill, 0.33fr) / 1fr;
+    gap: 1rem;
+}
 
 .announcements-panel div:not(:first-child){
     border-top: 1px solid grey;
@@ -297,6 +301,22 @@ body{
 
 .announcement h4{
     padding-top: 0.8rem;
+}
+
+.trending-panel{
+    grid-template: repeat(auto-fill, 0.25fr) / 1fr;
+    align-items: start;
+    gap: 1rem;
+}
+
+.trending-item{
+    display: grid;
+    grid-template: 1fr / 0.5fr 1.5fr;
+    gap: 1rem;
+}
+
+.trending-item div{
+    align-self: center;
 }
 
 
@@ -312,6 +332,7 @@ body{
 .summary,
 .interactions,
 .announcements,
-.trending{
+.trending,
+.trending-item{
     border: var(--guide-border);
 }
