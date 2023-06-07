@@ -101,12 +101,13 @@ body{
     grid-template: 1fr / 1fr 1fr 3fr;
     gap: 5px;
     align-items: center;
-    justify-items: end;
+    justify-content: end;
 }
 
 .notifications .bell-icon{
     background-color: aqua;
     height: 2rem;
+    justify-self: end;
 }
 
 .notifications .profile-icon{
@@ -116,7 +117,6 @@ body{
 }
 
 .notifications .username{
-    justify-self: center;
     padding: 0 10px;
 }
 
@@ -352,6 +352,10 @@ body{
 
 .trending-item div{
     align-self: center;
+}
+
+.trending-item-icon{
+    justify-self: end;
 }
 
 
