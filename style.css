@@ -9,6 +9,8 @@
     --announcment-panel-bg-color: #14b8a6;
     --trending-panel-bg-color: #14b8a6;
 
+    --button-color: #2483ac;
+
     --project-card-border-color: 1rem solid #075985;
 }
 
@@ -70,16 +72,13 @@ body{
     grid-template: 1fr / 2fr 1fr;
 }
 
-.header-bottom{
-    grid-area: header-bottom;
-    display: grid;
-    grid-template: 1fr / 1.5fr 1fr;
-}
 
 .search-bar{
     display: grid;
-    grid-template: 1fr / 1fr 5fr;
+    grid-template: 1fr / 1fr 20fr;
     gap: 5px;
+    justify-self: start;
+    padding-left: 2rem;
 }
 
 .search-bar img{
@@ -96,14 +95,16 @@ body{
     outline: none;
     border: none;
     background-color: var(--page-bg-color);
+    justify-self: center;
 }
 
 .notifications{
     display: grid;
-    grid-template: 1fr / 1fr 1fr 3fr;
+    grid-template: 1fr / 0.5fr 0.5fr max-content;
     gap: 5px;
     align-items: center;
     justify-content: end;
+    margin-right: 3rem;
 }
 
 .notifications .bell-icon{
@@ -115,18 +116,27 @@ body{
 .notifications .profile-icon{
     background-color: #fff;
     height: 2rem;
-    justify-self: end;
+    justify-self: center;
 }
 
 .notifications .username{
     padding: 0 10px;
     font-size: large;
+    justify-self: center;
 }
 
+.header-bottom{
+    grid-area: header-bottom;
+    display: grid;
+    grid-template: 1fr / 1fr 0.5fr;
+    gap: 1.5rem;
+}
 .greeting-area{
     display: grid;
     grid-template: 1fr/ 0.8fr 3fr;
     gap: 10px;
+    justify-self: start;
+    padding-left: 2rem;
 }
 
 .large-profile-icon{
@@ -134,7 +144,7 @@ body{
     height: 2.5rem;
     background-color: #fff;
     align-self: center;
-    justify-self: end;
+    justify-self: start;
 }
 
 .greeting{
@@ -155,11 +165,26 @@ body{
 }
 
 .button-menu{
-    display: grid;
+   /*  display: grid;
     grid-template: 1fr / repeat(3, auto);
     align-items: center;
-    justify-content: space-around;
-    gap: 10px;
+    justify-content: end; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 3rem;
+}
+
+.button-menu button{
+    background-color: var(--button-color);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 0.9rem;
+    padding: 0.6rem 1.5rem;
+    font-size: medium;
+    font-weight: 600;
+    min-width: clamp(30px, 100px, 200px)
 }
 
 
