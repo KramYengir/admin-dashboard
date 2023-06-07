@@ -34,6 +34,10 @@ body{
 }
 
 
+/**************
+* Header Area *
+***************/
+
 
 .header{
     grid-area: header;
@@ -138,6 +142,12 @@ body{
 
 
 
+/***********
+*  Sidebar *
+************/
+
+
+
 .sidebar{
     grid-area: sidebar;
     display: grid;
@@ -215,6 +225,13 @@ body{
 }
 
 
+
+/*************
+*  Main Area *
+**************/
+
+
+
 .main-content{
     grid-area: main;
     display: grid;
@@ -259,6 +276,15 @@ body{
     align-items: start;
     gap: 1rem;
 }
+
+
+
+/**************
+*  Feed Area  *
+***************/
+
+
+
 
 .feed h2{
     padding: 2rem 1rem 0 0;   
@@ -319,7 +345,9 @@ body{
     align-self: center;
 }
 
-
+/*
+A guideline border for organizing the layout
+*/
 .search-bar,
 .notifications,
 .greeting,
