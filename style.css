@@ -345,9 +345,11 @@ body{
     align-self: center;
 }
 
+
 /*
 A guideline border for organizing the layout
 */
+
 .search-bar,
 .notifications,
 .greeting,
