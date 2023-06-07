@@ -118,6 +118,7 @@ body{
 
 .notifications .username{
     padding: 0 10px;
+    font-size: large;
 }
 
 .greeting-area{
@@ -137,6 +138,18 @@ body{
 .greeting{
     align-self: center;
     justify-self: start;
+}
+
+.greeting p{
+    font-weight: 600;
+}
+
+.greeting-text{
+    font-size: small;
+}
+
+.greeting-username{
+    font-size: large;
 }
 
 .button-menu{
@@ -164,17 +177,19 @@ body{
     "nav"
     "settings";
     background-color: var(--sidebar-bg-color);
-    padding-left: 3rem;
+    padding-left: 2rem;
     padding-top: 2rem;
     gap: 50px;
     align-items: start;
 }
 
-.sidebar a{
+.sidebar a,
+.title-text{
     color: #fff;
     text-decoration: none;
     align-self: center;
     margin-left: 1rem;
+    font-weight: 600;
 }
 
 .title{
@@ -185,7 +200,7 @@ body{
 
 .title-item{
     display: grid;
-    grid-template: 1fr / 1fr 1fr;
+    grid-template: 1fr / 0.5fr 1fr;
     justify-self: start;
     align-self: center;
 }
@@ -193,11 +208,12 @@ body{
 .title img{
     width: 4rem;
     height: 4rem;
+    justify-self: end;
 }
 
 .title-text{
-    color: #fff;
-    align-self: center;
+    font-size: larger;
+    font-weight: 600;
 }
 
 .nav{
@@ -220,15 +236,16 @@ body{
 
 .nav-item,
 .settings-item{
-    display: grid;
-    grid-template: 1fr / 1fr 1fr;
+    display: flex;
+    /* grid-template: 1fr / 1fr 2fr; */
+    justify-content: start;
 }
 
 .nav img,
 .settings img{
     width: 3rem;
     height: 3rem;
-    justify-self: end;
+    padding-left: 1rem;
 }
 
 
