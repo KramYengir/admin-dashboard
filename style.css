@@ -8,6 +8,8 @@
     --feed-bg-color: #f0fdfa;
     --announcment-panel-bg-color: #14b8a6;
     --trending-panel-bg-color: #14b8a6;
+
+    --project-card-border-color: 1rem solid #075985;
 }
 
 *{
@@ -264,7 +266,7 @@ body{
 }
 
 .project-area h2{
-    padding: 2rem 0 0 2rem;
+    padding: 2rem 0 0 2rem;  
 }
 
 .projects{
@@ -281,6 +283,9 @@ body{
     height: 250px;
     background-color: #fff;
     padding: 1rem;
+    border-radius: 10px;
+    border-left: var(--project-card-border-color);
+    box-shadow: 8px 8px 5px 1px rgba(130, 130, 189, 0.2);
 }
 
 .interactions{
@@ -335,6 +340,8 @@ body{
     background-color: #fff;
     border-radius: 0.8rem;
     padding: 0.8rem;
+    box-shadow: 8px 8px 5px 1px rgba(130, 130, 189, 0.3);
+    min-width: 200px;
 }
 
 .announcements-panel::-webkit-scrollbar,
@@ -351,8 +358,16 @@ body{
     border-top: 1px solid grey;
 }
 
+.announcement{
+    padding: 0 1rem;
+}
+
 .announcement h4{
     padding-top: 0.8rem;
+}
+
+.announcement p{
+    font-size: small;
 }
 
 .trending-panel{
@@ -373,6 +388,10 @@ body{
 
 .trending-item-icon{
     justify-self: end;
+}
+
+.trending-item p{
+    font-size: medium;
 }
 
 
