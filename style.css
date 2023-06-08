@@ -123,6 +123,7 @@ body{
     padding: 0 10px;
     font-size: large;
     justify-self: center;
+    font-weight: 500;
 }
 
 .header-bottom{
@@ -210,13 +211,18 @@ body{
     align-items: start;
 }
 
-.sidebar a,
+.sidebar a:not(.icon-attribute a),
 .title-text{
     color: #fff;
     text-decoration: none;
     align-self: center;
     margin-left: 1rem;
-    font-weight: 600;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.sidebar img{
+    filter: invert(100%) saturate(0%) contrast(200%) brightness(200%);
 }
 
 .title{
@@ -239,7 +245,7 @@ body{
 }
 
 .title-text{
-    font-size: larger;
+    font-size: x-large;
     font-weight: 600;
 }
 
@@ -258,7 +264,7 @@ body{
     display: grid;
     grid-template: repeat(auto-fill, 1fr) /  1fr;
     justify-content: start;
-    gap: 5px;
+    gap: 1rem;
 }
 
 .nav-item,
@@ -266,13 +272,23 @@ body{
     display: flex;
     /* grid-template: 1fr / 1fr 2fr; */
     justify-content: start;
+    gap: 1.5rem;
 }
 
 .nav img,
 .settings img{
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     padding-left: 1rem;
+    justify-self: center;
+}
+
+.icon-attribute,
+.icon-attribute a{
+    color: #fff;
+    font-size: small;
+    text-decoration: none;
+    align-self: end;
 }
 
 
