@@ -38,8 +38,7 @@ body{
 .search-bar img,
 .notifications .bell-icon,
 .notifications .profile-icon,
-.interactable,
-.trending-item img{
+.interactable{
     width: 2rem;
     height: 2rem;
 }
@@ -437,8 +436,19 @@ body{
     justify-self: end;
 }
 
+.trending-item img{
+    border-radius: 50%;
+    width: 2.8rem;
+    height: 2.8rem;
+    object-fit: cover;
+    background-color: rgb(216, 216, 216);
+}
+
 .trending-item p{
-    font-size: medium;
+    font-size: 0.9rem;
+    color: rgb(49, 49, 49);
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
 }
 
 
