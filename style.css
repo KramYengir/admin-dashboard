@@ -100,6 +100,8 @@ body{
     border: 0.5px solid rgba(0,0,0,0.2);
     background-color: var(--page-bg-color);
     justify-self: start;
+    font-size: large;
+    padding-left: 1rem;
 }
 
 .notifications{
