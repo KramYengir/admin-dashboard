@@ -43,6 +43,19 @@ body{
     height: 2rem;
 }
 
+.profile-icon:hover,
+.large-profile-icon:hover,
+.bell-icon:hover,
+.search-bar img:hover,
+.username:hover,
+.greeting-username:hover,
+.nav-item:hover,
+.settings-item:hover,
+.trending-item:hover{
+    scale: 1.09;
+    transition: 0.2s;
+    cursor: pointer;
+}
 
 /**************
 * Header Area *
@@ -70,6 +83,7 @@ body{
     object-fit: cover;
     border-radius: 50%;
 }
+
 
 .header-top{
     grid-area: header-top;
@@ -186,11 +200,17 @@ body{
     color: #fff;
     outline: none;
     border: none;
-    border-radius: 0.9rem;
+    border-radius: 1rem;
     padding: 0.6rem 1.5rem;
     font-size: medium;
     font-weight: 600;
     min-width: clamp(30px, 100px, 200px)
+}
+
+button:hover{
+    scale: 1.1;
+    transition: 0.1s;
+    cursor: pointer;
 }
 
 
@@ -335,6 +355,10 @@ body{
     box-shadow: 8px 8px 5px 1px rgba(61, 61, 88, 0.3);
 }
 
+.project:hover{
+    scale: 1.02;
+}
+
 .interactions{
     display: flex;
     justify-content: flex-end;
@@ -344,6 +368,12 @@ body{
 
 .interactable{
     border: none;
+    transition: 0.1s;
+}
+
+.interactable:hover{
+    transition: 0.3s;
+    scale: 1.2;
 }
 
 .feed{
@@ -410,7 +440,13 @@ body{
     padding: 0 1rem;
 }
 
-.announcement h4{
+.announcement:hover{
+    scale: 1.03;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.announcement h5{
     padding-top: 0.8rem;
 }
 
