@@ -338,7 +338,7 @@ body{
 }
 
 .interactable{
-    background-color: #534242;
+    border: none;
 }
 
 .feed{
