@@ -66,6 +66,12 @@ body{
     padding: 1rem;
 }
 
+.profile-icon,
+.large-profile-icon{
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 .header-top{
     grid-area: header-top;
     display: grid;
@@ -82,7 +88,6 @@ body{
 }
 
 .search-bar img{
-    background-color: aqua;
     align-self: center;
     justify-self: end;
 }
@@ -108,7 +113,6 @@ body{
 }
 
 .notifications .bell-icon{
-    background-color: aqua;
     height: 2rem;
     justify-self: end;
 }
@@ -141,8 +145,8 @@ body{
 }
 
 .large-profile-icon{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     background-color: #fff;
     align-self: center;
     justify-self: start;
