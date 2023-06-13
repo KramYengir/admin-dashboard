@@ -438,7 +438,6 @@ button:hover{
     overflow-x: hidden;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: 10px;  /* Firefox */
-    scrollbar-track-color: #393E46;
     background-color: #fff;
     border-radius: 0.8rem;
     padding: 0.8rem;
