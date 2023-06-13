@@ -129,7 +129,7 @@ body{
 .notifications .bell-icon{
     height: 2rem;
     justify-self: end;
-    border-left: 0.5px solid grey;
+    /* border-left: 0.5px solid grey; */
     padding-left: 2rem;
 }
 
@@ -421,7 +421,8 @@ button:hover{
     overflow: scroll;
     overflow-x: hidden;
     -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    scrollbar-width: 10px;  /* Firefox */
+    scrollbar-track-color: #393E46;
     background-color: #fff;
     border-radius: 0.8rem;
     padding: 0.8rem;
@@ -431,7 +432,10 @@ button:hover{
 
 .announcements-panel::-webkit-scrollbar,
 .trending-panel::-webkit-scrollbar{
-    display: none;
+    /* display: none; */
+  }
+
+  .announcements-panel:-webkit-scrollbar-track {
   }
 
 .announcements-panel{
