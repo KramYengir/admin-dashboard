@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;1,200&display=swap');
 :root{
     --guide-border: 1px solid black 0;
     --page-bg-color: #EEEEEE;
@@ -12,6 +12,21 @@
     --button-color: #393E46;
 
     --project-card-border-color: 1rem solid #393E46;
+
+    --profile-fontsize: large;
+    --greeting-fontsize: smaller;
+    --greeting-username-fontsize: larger;
+    --sidebar-title-fontsize: 1.5rem;
+    --side-bar-items-fontsize: 1rem;
+   /*  --project-page-heading-fontsize: 1.5rem; */
+    --project-title-fontsize: 1rem;
+    --project-summary-fontsize: 1rem;
+    /* --announcements-heading-fontsize: 1.5rem; */
+    /* --announcement-title-fontsize: 1rem; */
+    --announcement-summary-fontsize: small;
+    /* --trending-heading-fontsize: 1.5rem; */
+  /*   --trending-username-fontsize: 1rem; */
+    --trending-summary-fontsize: small;
 }
 
 *{
@@ -22,7 +37,7 @@
 body{
     height: 100vh;
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Karla', sans-serif;
 }
 
 .container{
@@ -143,7 +158,7 @@ body{
 
 .notifications .username{
     padding: 0 1rem;
-    font-size: large;
+    font-size: var(--profile-fontsize);
     justify-self: center;
     font-weight: 500;
 }
@@ -180,11 +195,11 @@ body{
 }
 
 .greeting-text{
-    font-size: small;
+    font-size: var(--greeting-fontsize);
 }
 
 .greeting-username{
-    font-size: large;
+    font-size: var(--greeting-username-fontsize);
 }
 
 .button-menu{
@@ -273,7 +288,7 @@ button:hover{
 }
 
 .title-text{
-    font-size: x-large;
+    font-size: var(--sidebar-title-fontsize);
     font-weight: 600;
 }
 
@@ -314,7 +329,7 @@ button:hover{
 .icon-attribute,
 .icon-attribute a{
     color: #fff;
-    font-size: small;
+    font-size: var(--side-bar-items-fontsize);
     text-decoration: none;
     align-self: end;
 }
@@ -364,6 +379,7 @@ button:hover{
 
 .project p{
     padding-top: 1rem;
+    font-size: var(--project-summary-fontsize);
 }
 
 .interactions{
@@ -462,7 +478,7 @@ button:hover{
 }
 
 .announcement p{
-    font-size: small;
+    font-size: var(--announcement-summary-fontsize);
 }
 
 .trending-panel{
@@ -494,7 +510,7 @@ button:hover{
 }
 
 .trending-item p{
-    font-size: 0.9rem;
+    font-size: var(--trending-summary-fontsize);
     color: rgb(49, 49, 49);
     margin-top: 0.2rem;
     margin-left: 0.2rem;
